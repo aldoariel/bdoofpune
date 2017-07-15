@@ -14,7 +14,7 @@ public class ActualizandoPrimerObjeto {
 
 		Cliente cliente = em.find(Cliente.class, 3L);
 		em.getTransaction().begin();
-		cliente.setNombre("Juan Perez Modf");
+		cliente.setNombre("Juan Perez Modfi");
 		cliente.setEdad(28);
 		em.getTransaction().commit();
 		
