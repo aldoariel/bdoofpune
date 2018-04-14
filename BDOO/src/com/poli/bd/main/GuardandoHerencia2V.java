@@ -9,7 +9,7 @@ import com.poli.bd.modelo.Vendedor;
 public class GuardandoHerencia2V {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ejemploPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 		
 		Vendedor vendedor = new Vendedor();

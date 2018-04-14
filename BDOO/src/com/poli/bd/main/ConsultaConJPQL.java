@@ -11,7 +11,7 @@ import com.poli.bd.modelo.Cliente;
 public class ConsultaConJPQL {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ejemploPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 		
 		List<Cliente> clientes = em.createQuery("from Cliente where sexo = 'M'", Cliente.class)

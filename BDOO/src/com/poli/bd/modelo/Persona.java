@@ -19,12 +19,14 @@ import javax.persistence.TemporalType;
 @DiscriminatorColumn(name="TIPO_PERSONA"
 		+ ""
 		+ "", discriminatorType=DiscriminatorType.STRING)
+
 public abstract class Persona {
 
 	private Long codigo;
 	private String nombre;
 	private Date fechaNacimiento;
 	private String ci;
+	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -43,7 +45,7 @@ public abstract class Persona {
 	}
 	
 	@Temporal(TemporalType.DATE)
-	@Column(name="fecha_nascimento")
+	@Column(name="fecha_nacimento")
 	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}

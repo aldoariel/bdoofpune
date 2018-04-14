@@ -9,7 +9,7 @@ import com.poli.bd.modelo.Chofer;
 public class GuardandoHerencia {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ejemploPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 		
 		Chofer chofer = new Chofer();

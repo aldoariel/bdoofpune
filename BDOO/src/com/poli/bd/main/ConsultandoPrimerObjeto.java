@@ -9,7 +9,7 @@ import com.poli.bd.modelo.Cliente;
 public class ConsultandoPrimerObjeto {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ejemploPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 		
 		Cliente cliente = em.find(Cliente.class, 3L);
