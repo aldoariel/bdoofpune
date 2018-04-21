@@ -12,7 +12,7 @@ public class BorrandoPrimerObjeto {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 
-		Cliente cliente = em.find(Cliente.class, 1L);
+		Cliente cliente = em.find(Cliente.class, 2L);
 		
 		em.getTransaction().begin();
 		em.remove(cliente);

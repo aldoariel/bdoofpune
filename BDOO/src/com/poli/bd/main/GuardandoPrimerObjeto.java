@@ -13,9 +13,9 @@ public class GuardandoPrimerObjeto {
 		EntityManager em = emf.createEntityManager();
 		
 		Cliente cliente = new Cliente();
-		cliente.setNombre("Juan Perez");
+		cliente.setNombre("Maria ");
 		cliente.setEdad(40);
-		cliente.setProfesion("Agricultor");
+		cliente.setProfesion("Estudiante");
 		cliente.setSexo("M");
 		
 		em.getTransaction().begin();

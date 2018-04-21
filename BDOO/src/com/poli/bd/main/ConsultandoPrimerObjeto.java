@@ -12,7 +12,7 @@ public class ConsultandoPrimerObjeto {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("etcPU");
 		EntityManager em = emf.createEntityManager();
 		
-		Cliente cliente = em.find(Cliente.class, 3L);
+		Cliente cliente = em.find(Cliente.class, 1L);
 		
 		if (cliente != null) {
 			System.out.println("Nombre: " + cliente.getNombre());
